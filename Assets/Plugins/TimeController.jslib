@@ -2,7 +2,9 @@ mergeInto(LibraryManager.library,
 {
 
   AlertMoscowTime: function (str) {
-    alert(str);
-  }
+    var newWin = window.open("about:blank");
+    newWin.alert(UTF8ToString(str));
+  },
+
 
 });

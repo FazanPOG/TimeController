@@ -10,7 +10,9 @@ public class TimeController : MonoBehaviour
 
     private string moscowTime;
 
-    [DllImport("__Internal")] static extern void AlertMoscowTime(string moscowTime);
+    [DllImport("__Internal")]
+    private static extern void AlertMoscowTime(string str);
+
 
     public event Action<string> OnMoscowTimeUpdated;
 
